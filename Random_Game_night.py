@@ -14,16 +14,16 @@ print("="*60)
 import random ##import random module
 
 our_list = ["football","basketball", "baseball"] ##original List
-our_choice = random.choice(our_list) ###list being randomize
 
 print(our_list) ###print out original list
 while True:
+    our_choice = random.choice(our_list) ###list being randomize
     my_choice = input("Please pick a sport from the list above ") ###propompt user to guess.
 
-    print("Random sport selected was", our_choice) ##to provide a sense of transparency, show the system random choice.
+    print("Random system generate sport selected was", our_choice) ##to provide a sense of transparency, show the system random choice.
 
     if my_choice == our_choice: ###evaluating if your choice and system are the same.
-        print("Congrats, you selected the correct sports") ###if so, print the following message.
+        print("Congrats, you selected the correct sport that matches the system selection") ###if so, print the following message.
         break ###loop is broken and program is terminated.
     else: ### if your choice and system are not the same.
         print("Incorrect selection. Please try again") ###then print the following message
